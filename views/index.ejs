@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <title>Survey Form</title>
+</head>
+<body>
+        <div class="container">
+            <div class="form_box" style="width: 400px; margin: auto;">
+                <h1>Dojo Survey Form</h1>
+                <form action="/survey" method="post">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" name="name" class="form-control"  placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Dojo Location</label>
+                        <select class="form-control" name="location">
+                        <option>San Jose</option>
+                        <option>Seatle</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Favorite Language</label>
+                        <select class="form-control" name="language">
+                        <option>Python</option>
+                        <option>Java Script</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comment (optional)</label>
+                        <textarea class="form-control" rows="3" name="comment"></textarea>
+                    </div>
+                    <button type="Submit" class="btn btn-secondary btn-lg btn-block">Submit Form</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
